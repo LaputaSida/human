@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <title>Blank App</title>
+   		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>選部位</title>
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<!--<script>  //2秒
+		var timeout ;  
+		$("#mydiv").mousedown(function() {  
+			timeout = setTimeout(function() {  
+				$("#mydiv").text("in");//做事  
+			}, 2000);  
+		});   
+		</script>-->
     </head>
+	<style>
+	img{
+	display:block;
+	margin:0 auto;
+	}
+	</style>
+	
     <body>
-        <script type="text/javascript" src="cordova.js"></script>
+		<img src="human.jpg" width="250" height="500" usemap="#part" onclick="this width*2; this height*2;">
+		<map name="part" id="a">
+			<area shape="circle" coords="125,40,40" alt="head" href="" >
+			<area shape="rect" coords="75,70,175,120" alt="shoulder" href="">
+			<area shape="rect" coords="75,120,175,180" alt="back" href="">
+			<area shape="rect" coords="75,180,175,260" alt="waist" href="">
+			<area shape="rect" coords="75,260,175,340" alt="thigh" href="">
+			<area shape="rect" coords="75,340,175,420" alt="calf" href="">
+			<area shape="rect" coords="75,420,175,500" alt="feet" href="">
+			<area shape="rect" coords="20,90,75,200" alt="rightarm" href="">
+			<area shape="rect" coords="0,200,60,280" alt="righthand" href="">
+			<area shape="rect" coords="175,90,240,200" alt="leftarm" href="">
+			<area shape="rect" coords="190,200,250,280" alt="righthand" href="">
+		</map>
     </body>
 </html>
